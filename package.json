@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio",
+  "name": "dakota-whitney-portfolio",
   "version": "1.0.0",
   "description": "Dakota Whitney's web development portfolio",
   "main": "index.html",
@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7"
   }
