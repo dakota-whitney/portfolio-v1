@@ -81,11 +81,13 @@ body {
 }
 
 #welcome-section {
+  padding-top: 70px;
   height: 100vh;
 }
 
 .section {
-  margin: 100px;
+  margin: 100px 0px 100px 0px;
+  padding: 0px 170px 0px 170px;
 }
 
 .section-header {
@@ -173,6 +175,10 @@ body {
   #credentials-div {
     display: flex;
     flex-direction: column;
+  }
+
+  .section {
+    margin: 100px 0px 100px 0px;
   }
 
   #resume {
