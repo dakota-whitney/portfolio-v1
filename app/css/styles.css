@@ -87,7 +87,7 @@ body {
 
 .section {
   margin: 100px 0px 100px 0px;
-  padding: 0px 170px 0px 170px;
+  padding: 0px 140px 0px 140px;
 }
 
 .section-header {
@@ -114,7 +114,10 @@ body {
   height: auto;
 }
 
-#githun-img {
+.profile-img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -126,6 +129,7 @@ body {
 
 .credential-img {
   width: 250px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -172,17 +176,49 @@ body {
     display: none;
   }
 
+  #welcome-section {
+    padding-top: 0;
+    height: auto;
+  }
+
+  .section {
+    margin: 50px 0;
+    padding: 0px 0px 0px 140px;
+  }
+
   #credentials-div {
     display: flex;
     flex-direction: column;
   }
 
-  .section {
-    margin: 100px 0px 100px 0px;
-  }
-
   #resume {
     width: 40vw;
     height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    display: none;
+  }
+
+  #welcome-section {
+    padding-top: 0;
+    height: auto;
+  }
+
+  .section {
+    margin: 50px 0;
+    padding: 0px 0px 0px 140px;
+  }
+
+  .section-header {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #contacts-div {
+    display: flex;
+    flex-direction: column;
   }
 }
