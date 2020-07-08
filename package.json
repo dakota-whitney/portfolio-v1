@@ -1,0 +1,15 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Dakota Whitney's web development portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --browser firefox --server app --files app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

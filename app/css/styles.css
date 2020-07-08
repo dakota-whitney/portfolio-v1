@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  font-family: Montserrat, "Courier New", Courier;
+  /*CSS from CSS3 Patterns Gallery on Github*/
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  /*End CSS*/
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background-color: red;
+  box-shadow: 0px 0px 20px;
+}
+
+#navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 27px 83px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: red;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+#headshot {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 20px black;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+.section {
+  margin: 200px;
+}
+
+.section-header {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+}
+
+.project-tile {
+  color: white;
+}
+
+.project-img {
+  width: 500px;
+  height: auto;
+}
+
+#githun-img {
+  margin: 0 auto;
+}
+
+#credentials-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.credential-img {
+  width: 250px;
+  height: auto;
+}
+
+#resume {
+  width: 70%;
+  height: 30vw;
+}
+
+#contacts-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-tile {
+  margin: 0px 30px;
+}
+
+.contact-img {
+  width: 100px;
+  height: auto;
+}
