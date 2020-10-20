@@ -78,11 +78,24 @@ body {
   max-width: 100%;
   height: auto;
   box-shadow: 0px 0px 20px black;
+  border-radius: 50%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
 }
 
 #welcome-section {
-  padding-top: 70px;
-  height: 100vh;
+  padding-top: 20px;
+  /*height: 100%;*/
 }
 
 .section {
@@ -97,28 +110,39 @@ body {
   color: white;
 }
 
-#projects-grid {
+/*#projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 4rem;
   width: 100%;
-}
+}*/
 
 .project-tile {
   color: white;
+  transition: 100ms linear;
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
 }
 
 .project-img {
   width: 500px;
   max-width: 100%;
   height: auto;
+  border-radius: 3%;
 }
 
 .profile-img {
-  width: 100px;
+  width: 150px;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  transition: 100ms linear;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
 }
 
 #credentials-div {
@@ -132,6 +156,11 @@ body {
   width: 250px;
   max-width: 100%;
   height: auto;
+  transition: 100ms linear;
+}
+
+.credential-img:hover {
+  transform: scale(1.1);
 }
 
 #resume {
@@ -148,14 +177,24 @@ body {
 
 .contact-tile {
   margin: 0px 30px;
+  transition: 100ms linear;
+}
+
+.contact-tile:hover {
+  transform: scale(1.1);
 }
 
 .contact-img {
   width: 100px;
   height: auto;
+  border-radius: 10%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  #resume {
+    display: none;
+  }
+
   #navbar {
     flex-direction: column;
     width: 130px;
@@ -186,20 +225,11 @@ body {
     margin: 50px 0;
     padding: 0px 0px 0px 140px;
   }
-
-  #credentials-div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #resume {
-    width: 40vw;
-    height: 50vw;
-  }
 }
 
-@media only screen and (max-width: 600px) {
-  p {
+@media only screen and (max-width: 768px) {
+  p,
+  #resume {
     display: none;
   }
 
@@ -216,6 +246,11 @@ body {
   .section-header {
     text-align: left;
     font-size: 20px;
+  }
+
+  #credentials-div {
+    display: flex;
+    flex-direction: column;
   }
 
   #contacts-div {
