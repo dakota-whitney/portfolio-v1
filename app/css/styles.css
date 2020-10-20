@@ -110,12 +110,12 @@ body {
   color: white;
 }
 
-/*#projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 4rem;
+#projects-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-}*/
+}
 
 .project-tile {
   color: white;
@@ -134,10 +134,9 @@ body {
 }
 
 .profile-img {
-  width: 150px;
+  width: 250px;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
   transition: 100ms linear;
 }
 
@@ -148,7 +147,7 @@ body {
 #credentials-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
