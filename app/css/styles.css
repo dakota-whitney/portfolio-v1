@@ -203,7 +203,7 @@ body {
   }
 
   #navbar {
-    /*top: 30px;*/
+    top: 30px;
     flex-direction: column;
     justify-content: center;
     width: 130px;
@@ -215,12 +215,11 @@ body {
     display: block;
     position: fixed;
     color: white;
-    size: 100px;
   }
 
   .burger-active {
+    position: fixed !important;
     color: white;
-    position: relative !important;
   }
 
   #navbar {
@@ -238,6 +237,7 @@ body {
   }
 
   .nav-link {
+    border-radius: 45deg;
     margin: 0px 40px 0px 0px;
   }
 
