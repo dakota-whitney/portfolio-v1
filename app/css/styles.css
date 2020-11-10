@@ -146,6 +146,10 @@ body {
   transition: 100ms linear;
 }
 
+#codesandbox-logo {
+  border-radius: 50%;
+}
+
 .profile-img:hover {
   transform: scale(1.1);
 }
