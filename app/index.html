@@ -10,12 +10,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>Dakota Whitney's Online Portfolio</title>
   </head>
   <body>
     <div class="burger">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars fa-lg"></i>
     </div>
     <nav id="navbar">
       <img id="logo" src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/dw_logotype.png?raw=true" alt="Dakota Whitney Logo" />
@@ -23,6 +24,7 @@
         <li><a class="nav-link" href="#welcome-section">About</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#credentials">Credentials</a></li>
+        <li><a class="nav-link" href="#resume-section">Resume</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -35,60 +37,19 @@
           class="image"
           alt="Dakota's headshot"
         /><br />
-        <p>
-          My name is Dakota Whitney and I am currently an IT administrator & project
-          manager. This is my online portfolio where I'm demonstrating my
-          web development skillset as well as showcasing supporting credentials I've
-          attained over my IT career. Feel free to take a look around!
+        <p id="about">
+          I'm <span class="emph">Dakota Whitney</span>.
+          <br />
+          Currently an IT Analyst.
+          <br />
+          Soon to be Web Developer.
+          <br />
+          This is my online portfolio.
         </p>
       </section>
       <section id="projects" class="section">
         <h1 class="section-header">Projects</h1>
         <div id="projects-section">
-          <!-- <a
-            class="project-tile"
-            href="https://emswebapp.stern.nyu.edu/"
-            target="_blank"
-            >Stern EMS Web App Custom CSS<img
-              class="project-img"
-              src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/ems-web-app-custom-css.JPG?raw=true"
-              alt="EMS Web App Custom CSS"
-          /></a>
-          <a
-            class="project-tile"
-            href="https://codepen.io/dakota-whitney/full/XWXEXLW"
-            target="_blank"
-            >MetroPark Landing Page Prototype<img
-              class="project-img"
-              src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/metropark.JPG?raw=true" alt="MetroPark Landing Page"/><h5>Click the logo for a full UX proposal</h5></a
-          >
-          <a
-            class="project-tile"
-            href="https://codepen.io/dakota-whitney/full/yLeKBXy"
-            target="_blank"
-            >Stern EMS FAQ Page<img
-              class="project-img"
-              src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/ems-faq-page.JPG?raw=true"
-              alt="EMS FAQ Page"
-          /></a>
-          <a
-            class="project-tile"
-            href="https://codepen.io/dakota-whitney/full/yLeVqNg"
-            target="_blank"
-            >FCC Survey Form<img
-              class="project-img"
-              src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/survey-form.JPG?raw=true"
-              alt="Survey Form"
-          /></a>
-          <a
-            class="project-tile"
-            href="https://codepen.io/dakota-whitney/full/JjGEKQz"
-            target="_blank"
-            >FCC Tribute Page<img
-              class="project-img"
-              src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/ts-tribute.JPG?raw=true"
-              alt="Tony Stark Tribute page"
-          /></a> -->
         <a
           id="profile-link"
           href="https://github.com/dakota-whitney"
@@ -100,6 +61,10 @@
             alt="Github badge"
         /></a></a>
         <a
+            class="profile-link"
+            href="https://app.netlify.com/teams/dakota-whitney/sites"
+            target="_blank"><img class="profile-img" src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/netlify-logomark-dark.png?raw=true" alt="Netlify logo"></a>
+        <a
           class="profile-link"
           href="https://codepen.io/dakota-whitney"
           target="_blank"
@@ -107,10 +72,7 @@
             class="profile-img"
             src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/codepen-logo.png?raw=true"
             alt="Codepen Logo" /></a
-        ><a
-            class="profile-link"
-            href="https://app.netlify.com/teams/dakota-whitney/sites"
-            target="_blank"><img class="profile-img" src="https://github.com/dakota-whitney/fcc-personal-portfolio/blob/master/app/img/netlify-logomark-dark.png?raw=true" alt="Netlify logo"></a>
+        >
         </div>
       </section>
       <section id="credentials" class="section">
@@ -146,12 +108,13 @@
               alt="CSPO Badge"
           /></a>
         </div>
-        <br /><br />
-        <h2>Resume</h2>
+        <section id="resume-section" class="section">
+          <h2 class="section-header">Resume</h2>
         <iframe
           id="resume"
           src="https://docs.google.com/document/d/e/2PACX-1vTVRmE5XDttuSUYlYmble71eRbyS3Ww7UohVpotmvW1TGh3ySFi370_ekOTBmBqc_6wjemq8k6GvzwI/pub?embedded=true"
         ></iframe>
+          <a id="resume-icon" href="https://docs.google.com/document/d/16qFY4h_bbzYhCoUY4v9RgwschA1JzI_-5rsk74mXj78/edit?usp=sharing" target="_blank"><i class="far fa-file fa-7x"></a></i>
       </section>
       <section id="contact" class="section">
         <h1 class="section-header">Contact</h1>
@@ -173,6 +136,6 @@
         </div>
       </section>
     </div>
-  <script src="js/scripts.js"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
