@@ -44,6 +44,11 @@ body {
   height: 80px;
 }
 
+#logo {
+  width: 350px;
+  height: auto;
+}
+
 .burger {
   display: none;
 }
