@@ -151,7 +151,7 @@ body {
 }
 
 .profile-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #credentials-div {
@@ -169,7 +169,7 @@ body {
 }
 
 .credential-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #resume-section a {
@@ -181,7 +181,7 @@ body {
 #resume-section a:hover {
   color: white;
   text-decoration: underline;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #resume {
@@ -208,7 +208,7 @@ body {
 }
 
 .contact-tile:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .contact-img {
@@ -234,6 +234,7 @@ body {
     height: 100% !important;
     transition: all 400ms;
     left: -100%;
+    visibility: hidden;
   }
 
   .burger {
@@ -251,6 +252,7 @@ body {
 
   .nav-active {
     left: 0 !important;
+    visibility: visible !important;
   }
 
   .main-active {
